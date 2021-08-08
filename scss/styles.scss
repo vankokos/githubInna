@@ -167,6 +167,7 @@
 }
 
 .contact {
+    padding-bottom: 30px;
     &__inner {
         &-title {
             padding-top: 30px;
@@ -178,11 +179,11 @@
         }
 
         &-main {
-            padding-top: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             p {
+                padding-top: 20px;
                 font-family: "montserrat";
                 font-weight:200;
                 text-align: center;
@@ -200,6 +201,40 @@
                         margin-right:0px;
                     }
                 }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #287a4a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        &-contacts {
+            ul {
+                li {
+                    font-family: "montserrat";
+                    color:white;
+                    font-weight: 200;
+
+                    &:first-child {
+                        font-weight:400;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+        &-copyright {
+            padding-top: 30px;
+            p {
+                font-family: "montserrat";
+                color:white;
+                font-weight:200;
             }
         }
     }
