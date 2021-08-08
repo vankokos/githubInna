@@ -46,6 +46,27 @@
   color: white;
   margin-right: 20px;
   font-family: "montserrat";
+  position: relative;
+}
+
+.header__inner-menu-list a::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  bottom: -3px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  left: 50%;
+}
+
+.header__inner-menu-list a:hover::before {
+  content: "";
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  left: 0;
 }
 
 .about {
@@ -168,11 +189,24 @@
   gap: 20px;
 }
 
+.experience__inner-main-certificates-list div {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .experience__inner-main-certificates-list div img {
   border-radius: 7px;
   height: 150px;
   padding: 10px;
   background-color: #287a4a32;
+}
+
+.experience__inner-main-certificates-list div:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .experience__inner-main-certificates h1 {
@@ -223,12 +257,18 @@
   padding-top: 20px;
 }
 
-.contact__inner-main-social a {
-  margin-right: 20px;
+.contact__inner-main-social a img {
+  height: 100px;
+  padding: 10px;
+  border-radius: 100px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.contact__inner-main-social a img {
-  height: 70px;
+.contact__inner-main-social a img:hover {
+  background-color: #287a4a32;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contact__inner-main-social a:last-child {
@@ -270,5 +310,44 @@
   font-family: "montserrat";
   color: white;
   font-weight: 200;
+}
+
+#lightbox {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: lightgrey;
+  z-index: 100000000;
+  opacity: 0.7;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.imageCertificate {
+  left: 30%;
+  top: 20%;
+  position: fixed;
+  z-index: 10000000000;
+}
+
+.imageCertificateImg {
+  height: 400px;
+  border: 3px solid #287a4a;
+  border-radius: 10px;
+}
+
+.imageCertificateCancel {
+  height: 30px;
+}
+
+.imageCertificate button {
+  background: transparent;
+  position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */
