@@ -2,6 +2,8 @@ let certificate = document.querySelectorAll(".experience__inner-main-certificate
 let lightbox = document.querySelector("#lightbox")
 let imageCertificate = document.querySelector(".imageCertificate")
 let imageCertificateImg = document.querySelector(".imageCertificate img")
+let imageCertificateClose = document.querySelector("#imageCertificateClose")
+
 
 for (let i = 0; i < certificate.length; i++) {
     // console.log(certificate[i])
@@ -26,6 +28,20 @@ for (let i = 0; i < certificate.length; i++) {
 }
 
 lightbox.addEventListener("click",()=> {
+    if(lightbox.classList.contains("displayNone")) {
+        lightbox.classList.remove("displayNone")
+        lightbox.classList.add("displayBlock")
+        imageCertificate.classList.remove("displayNone")
+        imageCertificate.classList.add("displayBlock")
+    } else {
+        lightbox.classList.remove("displayBlock")
+        lightbox.classList.add("displayNone")
+        imageCertificate.classList.remove("displayBlock")
+        imageCertificate.classList.add("displayNone")
+    }
+})
+
+imageCertificateClose.addEventListener("click", ()=> {
     if(lightbox.classList.contains("displayNone")) {
         lightbox.classList.remove("displayNone")
         lightbox.classList.add("displayBlock")
