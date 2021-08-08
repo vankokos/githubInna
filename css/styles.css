@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #287a4a;
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.header__inner-logo p {
+  color: white;
+  font-family: "montserrat";
+}
+
+.header__inner-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__inner-menu-list a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  font-family: "montserrat";
+}
+
+.about {
+  padding-top: 100px;
+}
+
+.about__inner-title {
+  padding-top: 20px;
+}
+
+.about__inner-title p {
+  font-size: 25px;
+  font-family: "montserrat";
+  text-align: center;
+}
+
+.about__inner-text {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+}
+
+.about__inner-text p {
+  font-family: "montserrat";
+  width: 500px;
+  font-weight: 200;
+}
+
+.about__inner-text img {
+  height: 400px;
+}
+
+.about__inner-text h1 {
+  position: absolute;
+  font-family: "roboto mono";
+  font-size: 100px;
+  top: 50%;
+  left: 68%;
+  color: #287a4a32;
+}
+
+.experience__inner-title {
+  padding-top: 30px;
+}
+
+.experience__inner-title p {
+  font-size: 25px;
+  font-family: "montserrat";
+  text-align: center;
+}
+
+.experience__inner-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.experience__inner-main-list {
+  padding-top: 20px;
+  position: relative;
+}
+
+.experience__inner-main-list-block {
+  padding: 20px;
+  background-color: #f0f4ff;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.experience__inner-main-list-block h1 {
+  font-family: "montserrat";
+}
+
+.experience__inner-main-list-block p {
+  font-family: "montserrat";
+  font-weight: 200;
+}
+
+.experience__inner-main-list-block::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  background: #287a4a;
+  height: 10px;
+  width: 10px;
+  border-radius: 100px;
+  z-index: 1000;
+}
+
+.experience__inner-main-list-block::after {
+  content: "";
+  height: 685px;
+  width: 2px;
+  background: black;
+  position: absolute;
+  left: -16px;
+  top: 50px;
+}
+
+.experience__inner-main-certificates {
+  padding-top: 20px;
+  position: relative;
+}
+
+.experience__inner-main-certificates-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.experience__inner-main-certificates-list div img {
+  border-radius: 7px;
+  height: 150px;
+  padding: 10px;
+  background-color: #287a4a32;
+}
+
+.experience__inner-main-certificates h1 {
+  position: absolute;
+  font-family: "roboto mono";
+  font-size: 100px;
+  top: 50%;
+  left: 43%;
+  color: #287a4a32;
+}
+
+.contact__inner-title {
+  padding-top: 30px;
+}
+
+.contact__inner-title p {
+  font-size: 25px;
+  font-family: "montserrat";
+  text-align: center;
+}
+
+.contact__inner-main {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact__inner-main p {
+  font-family: "montserrat";
+  font-weight: 200;
+  text-align: center;
+  width: 800px;
+}
+
+.contact__inner-main-social {
+  padding-top: 20px;
+}
+
+.contact__inner-main-social a {
+  margin-right: 20px;
+}
+
+.contact__inner-main-social a img {
+  height: 70px;
+}
+
+.contact__inner-main-social a:last-child {
+  margin-right: 0px;
+}
+/*# sourceMappingURL=styles.css.map */

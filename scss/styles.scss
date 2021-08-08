@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width:1100px;
+    margin:0 auto;
+}
+
+.header {
+    background-color: #287a4a;
+    z-index:10000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        &-logo {
+            p {
+                color:white;
+                font-family:"montserrat"
+            }
+        }
+        &-menu {
+            &-list {
+                display: flex;
+                a {
+                    text-decoration: none;
+                    color:white;
+                    margin-right: 20px;
+                    font-family: "montserrat";
+                }
+            }
+        }
+    }
+}
+
+.about {
+    padding-top: 100px;
+    &__inner {
+        &-title {
+            padding-top: 20px;
+            p {
+                font-size:25px;
+                font-family: "montserrat";
+                text-align: center;
+            }
+        }
+      
+        &-text {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            position:relative;
+            p {
+                font-family:"montserrat";
+                width:500px;
+                font-weight:200
+            }
+
+            img {
+                height:400px;
+            }
+
+            h1 {
+                position:absolute;
+                font-family: "roboto mono";
+                font-size:100px;
+                top:50%;
+                left:68%;
+                color:#287a4a32;
+            }
+        }
+    }
+}
+
+.experience {
+    &__inner {
+        &-title {
+            padding-top: 30px;
+            p {
+                font-size:25px;
+                font-family: "montserrat";
+                text-align: center;
+            }
+        }
+
+        &-main {
+            display: flex;
+            justify-content: space-evenly;
+            &-list {
+                padding-top: 20px;
+                position:relative;
+
+                &-block {
+                    padding:20px;
+                    background-color: #f0f4ff;
+                    margin-bottom: 10px;
+                    border-radius:10px;
+
+                    h1 {
+                        font-family: "montserrat";
+                    }
+
+                    p {
+                        font-family: "montserrat";
+                        font-weight:200;
+                    }
+
+                    &::before {
+                        content:"";
+                        position:absolute;
+                        left:-20px;
+                        background:#287a4a;
+                        height:10px;
+                        width:10px;
+                        border-radius:100px;
+                        z-index:1000;
+                    }
+
+                    &::after {
+                        content: "";
+                        height:685px;
+                        width:2px;
+                        background:black;
+                        position:absolute;
+                        left:-16px;
+                        top:50px;
+                    }
+
+                }
+            }
+
+            &-certificates {
+                padding-top: 20px;
+                position:relative;
+                &-list {
+                    display:grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(1, 1fr);
+                    gap:20px;
+                    div {
+                        img {
+                            border-radius:7px;
+                            height:150px;
+                            padding:10px;
+                            background-color: #287a4a32;
+                        }
+                    }
+                }
+
+                h1 {
+                    position:absolute;
+                    font-family: "roboto mono";
+                    font-size:100px;
+                    top:50%;
+                    left:43%;
+                    color:#287a4a32;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    &__inner {
+        &-title {
+            padding-top: 30px;
+            p {
+                font-size:25px;
+                font-family: "montserrat";
+                text-align: center;
+            }
+        }
+
+        &-main {
+            padding-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                font-family: "montserrat";
+                font-weight:200;
+                text-align: center;
+                width:800px;
+            }
+            &-social {
+                padding-top: 20px;
+                a {
+                    margin-right: 20px;
+                    img {
+                        height:70px;
+                    }
+
+                    &:last-child {
+                        margin-right:0px;
+                    }
+                }
+            }
+        }
+    }
+}
